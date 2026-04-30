@@ -1,41 +1,45 @@
-body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right,#667eea,#764ba2);
-    margin:0;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.container{
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    text-align:center;
-    width:350px;
-    box-shadow:0px 5px 15px rgba(0,0,0,0.3);
-}
-
-input{
-    width:90%;
-    padding:10px;
-    margin:10px 0;
-}
-
-button{
-    padding:10px 20px;
-    background:#667eea;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#5a67d8;
-}
-
-#result{
-    margin-top:20px;
-}
+<!doctype html> 
+<html> 
+  <head> 
+    <title>Student Result</title> 
+  </head> 
+  <body> 
+    <h2>Student Result Program</h2> 
+      <script> 
+      var subjects = prompt("Enter number of subjects"); 
+      var total = 0; 
+      for (var i = 1; i <= subjects; i++) { 
+        var marks = prompt("Enter marks of subject " + i); 
+        total = total + Number(marks); 
+      } 
+ var average = total / subjects; 
+  var grade; 
+      var result; 
+  if (average >= 60) { 
+        grade = "A"; 
+        result = "Pass"; 
+      } else if (average >= 50) {   grade = "B"; 
+        result = "Pass"; 
+      } else if (average >= 40) { 
+        grade = "C"; 
+        result = "Pass"; 
+      } else { 
+        grade = "D"; 
+        result = "Fail"; 
+      } 
+      document.write("Total Marks = " + total); 
+      document.write("<br>"); 
+      document.write("Average Marks = " + average); 
+      document.write("<br>"); 
+      document.write("Grade = " + grade); 
+      document.write("<br>"); 
+      document.write("Result = " + result); 
+    </script> 
+  </body> 
+</html> 
+ 
+ 
+ 
+ 
+ 
+                                                  
